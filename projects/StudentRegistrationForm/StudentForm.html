@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/81d87d46a5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <Div id="navigation"> 
+        <header>
+            <a href="http://127.0.0.1:5500/home.html"><img class="logo" src="logo.png"></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="D:/Documents/Portfolio/Projects/StudentRegistrationForm/home.html">Home</a></li>
+                    <li><a href="D:/Documents/Portfolio/Projects/StudentRegistrationForm/StudentForm.html">Registration</a></li>
+                    <li><a href="#aboutus">About</a></li>
+                </ul>
+            </nav>
+            <a class="cta" id="contactButton" href="#"><button>Contact</button></a>
+        </header>
+    </Div>
+
+
+    <form>
+        <div id="studentform">
+            
+                <h1 id="title">STUDENT REGISTRATION FORM</h1>
+
+            <div id="student_content">
+                
+                <label for="studentname" id="studentname1"s>Personal Information</label>
+                <br><br>
+                
+                
+            
+
+                <div id="studentname">
+                    <label for="firstname" id="fname">First Name</label>
+                    <input type="text"  class="studentname" id="firstname" placeholder="Juan" name="studentname">
+                    <br><br>
+                    <label for="middlename" id="mname" >Middle Name</label>
+                    <input type="text"  class="studentname" id="middlename" placeholder="Dela" name="studentname">
+                    <br><br>
+                    <label for="lastname" id='lname'>Last Name</label>
+                    <input type="text"  class="studentname" id="lastname" placeholder="Cruz" name="studentname">
+                </div>
+                <br>
+            
+                <div>
+                    <label for="birthday">Birth Day</label>
+                    <input type="date" id="birthday">
+                </div>
+                <br>
+
+                <label for="male">Gender</label>
+                <br>
+                <div id="gender">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+
+                <br>
+                <div>
+                    <label for="current_address" >Current Address</label>
+                    <input type="text" id="current_address" placeholder="Enter Current Address">
+                </div>
+                <br>
+                <div>
+                    <label for="permanent_address" >Permanent Address</label>
+                    <input type="text" id="permanent_address" placeholder="Enter Permanent Address">
+                </div>
+                <br>
+                <div>
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" id="phonenumber" placeholder="000-000-00000">
+                </div>
+                <Br>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="juandelacruz@gmail.com">
+                </div>
+                <br>
+
+                <div>
+                    <label for="strand_dropdown">Senior Highschool Strand</label>
+                    <select name="strand_dropdown" id="strand_dropdown">
+                        <option value="">General Academic Strand (GAS)</option>
+                        <option value="">Humanities and Social Sciences Strand (HUMSS)</option>
+                        <option value="">Science, Technology, Engineering, and Mathematics Strand (STEM)</option>
+                        <option value="">Accountancy, Business and Management Strand (ABM)</option>
+                    
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label class="message">Reason for Applying</label>
+                    <br>
+                    <textarea  id="message" placeholder="Type Here...">The reason I am applying in this school is because </textarea>
+                </div>
+                <br><br>
+                
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement">Check here to indicate that you have read and agree to the terms of the <p id="term">E-book Education.</p></label>
+                
+            </div>
+
+                <br><br>
+                <div id="buttons">
+                    <input type="button" value="Register" id="register">
+                    <input type="reset" id="reset">
+                </div>
+        </div>
+    </form>
+     <!--------------Footer----------->
+     <section class="footer">
+        <h4 id="aboutus">About Us</h4>
+        <p>This website was built to make registration simple and contact-free, reducing the danger of infection from many viruses.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Created by Yughie Perez </p>
+
+    </section>
+      
+</body>
+</html>

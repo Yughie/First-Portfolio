@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+html{
+     background: linear-gradient(135deg, rgb(40, 132, 76), #1e2e46);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed; 
+      
+}
+
+header{
+    margin: -13px;;
+    padding: 0;
+    background-size: cover;
+    box-sizing: border-box;
+    background-color:  #1e2e46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    
+}
+
+#navigation li, button, a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #edf0f1;
+    overflow: hidden;
+
+}
+.nav_links{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+#contactButton button{
+    font-family: 'Montserrat', sans-serif;
+    padding:9px 25px;
+    background-color: rgb(40, 132, 76);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+#contactButton button:hover{
+    background-color: rgb(53, 160, 96);
+}
+#contactButton button:active{
+    background-color: rgb(33, 82, 52);
+
+}
+.logo {
+    width: 200;
+    height: 100;
+    cursor: pointer;
+}
+
+
+
+
+
+/* START OF FORM */
+
+#studentform{
+    border:none;
+    border-radius: 5px;
+    margin: 25px 20% 25px 20%;
+    font-size: 20px;  
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    font-family: 'Montserrat', sans-serif;
+}
+#student_content{
+    margin-left: 10%;
+
+}
+#title{
+    text-align: center;
+    
+}
+
+#studentname1{ 
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+#firstname{
+    width: 30%;
+    height: 20px;
+    border-radius:4px;
+    height: 25px;
+    
+}
+#middlename{
+    width: 30%;
+    height: 20px;
+    height: 25px;
+        
+   
+}
+#lastname{
+    width: 30%;
+    height: 20px;
+    height: 25px;
+    
+}
+
+.studentname input{
+    border: solid;
+    
+}
+#birthday{
+    width: 20%;
+    text-align: center;
+    height: 25px;
+}
+
+#current_address{
+    width: 50%;
+    height: 25px;
+}
+#permanent_address{
+    width: 50%;
+    height: 25px;
+}
+#phonenumber{
+    width: 20%;
+    height: 25px;
+}
+#email{
+    width: 30%;
+    height: 25px;
+}
+textarea{
+    width: 800px;
+    height: 200px;
+    
+    
+}
+
+
+#term {
+    color: rgb(25, 25, 147);
+    display:inline-block
+}
+
+
+#buttons{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#register{
+    background-color: rgb(49, 156, 90);
+    height: 40px;
+    width: 100px;
+}
+#register:hover{
+    background-color: rgb(53, 160, 96);
+    
+}
+#register:active{
+    background-color: rgb(33, 82, 52);
+}
+#reset{
+    
+    height: 40px;
+    width: 100px;
+}
+
+
+#strand_dropdown{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 25px;
+    width: 40%;
+}
+
+
+
+/* HOMEPAGE*/
+.welcome{
+    width: 20%;
+    height: 20%;
+    position: relative;
+    top: 0px;
+    right:0px;
+    
+}
+
+
+/*----------FOOTER-------------*/
+.footer{
+    width: 101%;
+    text-align: center;
+    padding:30px 0;
+    color: #535953;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    background: linear-gradient(120deg, rgba(29, 179, 64, 0.8),rgba(210, 224, 234, 0.8));
+    margin: 35px -4px -40px -10px;
+    
+    
+    
+}
+.footer h4{
+    font-weight: 400px;
+    font-size: 20px;
+}

@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    
+}
+header{
+    background-color: rgba(95, 67, 233, 0.003);
+    position: sticky;
+    
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 35px;
+    padding-top: 50px;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500px;
+    color: rgb(243, 249, 249);
+}
+.header ul li::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    display: block;
+    background: aqua;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.header ul li:hover::after{
+    width: 100%;
+    color:aqua;
+}
+.header ul li:hover{
+    color:rgb(105, 226, 226);
+}
+
+nav img{
+    padding-top: 30px;
+}
+nav ul{
+    list-style: none;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    
+
+}
+
+
+.header{
+    background-image: linear-gradient(190deg, rgba(229, 226, 241,.07),rgba(95, 67, 233, 0.5)), url("images/headcover1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/*----------Welcome------------*/
+.welcome_section #welcome{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    text-align: center;
+    
+}
+.welcome_section #welcome .welcomeMessage h1{
+   
+    font-size: 72px;
+    color: rgb(210, 218, 226);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.welcomeMessage{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    margin: 15% 10%;
+    text-align: center;
+    width: 80%;
+    
+   
+    
+}
+#resumeButton{
+    border: 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    width: 250px;
+    color: whitesmoke;
+    background: transparent;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-color: whitesmoke;
+    transition: .5s;
+    font-family: 'Times New Roman', Times, serif, Courier, monospace;
+    font-size: 25px;
+    
+}
+#resumeButton:hover{
+    background:linear-gradient(140deg,rgba(175, 55, 202, 0.3),rgba(11, 106, 239, 0.3)), url(images/logoonly.png)  ;
+    background-position: center;
+    background-size: cover;
+    border-color:rgba(59, 79, 168, 0.7) ;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    
+}
+
+.welcomeMessage a{
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+.social{
+    position: fixed;
+    height:75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-185px,0);
+    width: 250px;
+
+}
+.social a{
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(130deg,rgba(4,3,4,0.4), rgba(123,50,150,0.4));
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px;
+    padding: 20px;
+    text-align: right;
+    border-radius: 50px;
+    transition: 1s;
+    transition-property: transform;
+
+    
+}
+.social .fa-brands{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.social a:hover:nth-child(1){
+    transform: translate(100px,0);
+    color: rgb(57, 57, 235);
+}
+.social a:hover:nth-child(2){
+    transform: translate(100px,0);
+    color: rgb(235, 57, 57);
+
+}
+.social a:hover:nth-child(3){
+    transform: translate(100px,0);
+    color:rgb(190, 14, 254);
+
+}
+.social a:hover:nth-child(4){
+    transform: translate(100px,0);
+    color:rgb(70, 29, 231);
+
+}
+.social a:hover:nth-child(5){
+    transform: translate(100px,0);
+    color:#fff;
+
+}
+
+.fa-solid{
+    display: none;
+}
+.fa-xmark{
+    font-size: 1px;
+}
+.fa-bars{
+    font-size: 1px;
+}
+.nav_links ul{
+    padding-left: px;
+   
+}
+
+@media(max-width: 1050px){
+     nav li{
+        font-size: 16px;
+        display: block;
+        z-index: 999;
+        text-align: left;
+        border-bottom: 2px solid rgba(175, 55, 202, 0.707);
+        cursor: pointer;
+    
+
+     }
+     .nav_links{
+        position: absolute;
+        height: 100vh;
+        background:  linear-gradient(130deg,rgba(90, 53, 89,1),rgba(91, 100, 226,1));
+        top: 0;
+        right: -50%;
+        width: 50%;
+        z-index: 999; 
+        transition: 1s;  
+        cursor: pointer;
+        
+    }
+    header{
+        z-index: 999;
+    }
+    .fa-bars{
+        display: block;
+        color: aqua;
+        cursor: pointer; 
+        font-size: 30px;
+        margin: 45px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+   
+   
+
+    .nav_links .fa-xmark{
+        display: block;
+        color: aqua;
+        margin: 20px;
+        font-size: 30px;
+        cursor: pointer; 
+    }
+    
+    .header ul li::after{
+        height: 3px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .header #welcome .welcomeMessage h1{
+        font-size: 52px;
+        padding-top: 15%;
+    }
+    .social a{
+        transform: scale(.8,.8);
+        
+    }
+    .social .fa-brands{
+        transform: scale(.8,.8);
+    }
+    .social{
+        transform: scale(.8,.8);
+        transform: translate(-175px, 0);
+    }
+    
+   
+}
+
+/*----------About Me------------*/
+.aboutme{
+    height: 120vh;
+    background-image: url('images/project1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    
+}
+
+.about_container h2{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: rgb(2, 199, 248);
+}
+#profile img{
+    border: 10px rgb(35, 197, 238);
+    border-style:solid;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(90deg, rgb(5, 196, 239), rgb(127, 27, 149));
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+
+#intro_skills {
+    padding-left: 30px;
+    background: rgba(107, 14, 140, 0.943);
+    padding: 40px;
+}
+#intro_skills p{
+    font-size: 20px;
+    font-weight: bold;
+}
+#intro_skills .iam{
+    color: white;
+}
+#intro_skills h3{
+    color: antiquewhite;
+}
+#intro_skills h5{
+    padding-top: 20px;
+    color: rgb(183, 225, 225);
+   
+}
+
+.progress_bar{
+    border: 1px solid rgb(5, 196, 239);
+    border-radius: 25px;
+    margin-right: 20px;
+    
+}
+.progress_bar p{
+    margin: 0;
+    color: rgb(21, 34, 53);
+    text-align: center;
+    
+}
+
+
+
+.percent{
+    margin: 0;
+    color: rgb(18, 19, 20);
+    text-align: center;
+    
+}
+
+
+.progress_bar .cplus{
+    width: 80%;
+    background: linear-gradient(to bottom, rgb(3, 209, 255), rgb(207, 218, 220));
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.progress_bar .java{
+    width: 70%;
+    background: linear-gradient(to bottom, rgb(3, 209, 255), rgb(207, 218, 220));    border-radius: 25px;
+}
+.progress_bar .html{
+    width: 80%;
+    background: linear-gradient(to bottom, rgb(3, 209, 255), rgb(207, 218, 220));    border-radius: 25px;
+}
+.progress_bar .css{
+    width: 60%;
+    background: linear-gradient(to bottom, rgb(3, 209, 255), rgb(207, 218, 220));    border-radius: 25px;
+}
+.progress_bar .css{
+    width: 60%;
+    background: linear-gradient(to bottom, rgb(3, 209, 255), rgb(207, 218, 220));    border-radius: 25px;
+}
+.progress_bar .filmora{
+    width: 75%;
+    background: linear-gradient(to bottom, rgb(3, 209, 255), rgb(207, 218, 220));    border-radius: 25px;
+}
+.progress_bar .adobe{
+    width: 85%;
+    background: linear-gradient(to bottom, rgb(3, 209, 255), rgb(207, 218, 220));    border-radius: 25px;
+}
+.progress_bar .vmix{
+    width: 70%;
+    background: linear-gradient(to bottom, rgb(3, 209, 255), rgb(207, 218, 220));    border-radius: 25px;
+}
+
+@media(max-width:1050px){
+    .aboutme{
+        height: 180vh;
+    }
+    .about_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #intro_skills{
+        padding-top: 50px;
+    }
+    
+
+}
+
+/*----------Project Section------------*/
+.project_section{
+    width: 100%;
+    background: linear-gradient(rgba(175, 55, 202, 0.7), rgba(10, 67, 166, 0.5)), url('images/project.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.project_section h1{
+    text-align: center;
+    padding-top: 100px;
+}
+.project_section p{
+    text-align: center;
+}
+.layer{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+/*----------Project Content------------*/
+.container_project{
+    width: 70%;
+    margin: auto;
+    background: #d4d0d0;
+    padding-bottom: 100px;
+}
+.content_container{
+    border: 1px solid rgba(196, 193, 193, 0.2);
+    padding: 40px;
+    width: 100%;
+    height: 700px;
+}
+.content_container img{
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+.content_container img:hover{
+
+    animation: imagescale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imagescale{
+    50%{transform: scale(1.1,1.1)};
+    100%{transform: scale(1,1)};
+}
+
+.content_container p{
+    padding-top: 30px;
+}
+.content_container h2{
+    padding: 25px;
+}
+ 
+.content_container .button{
+    border: 1px solid;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2px;
+    
+}
+.content_container a{
+    text-decoration: none;
+    color: #3f3a3a;
+}
+
+
+
+
+@media(max-width:1050px){
+    .layer{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_container{
+        width: 100%;
+        padding-bottom: 25px;
+    }
+}
+    
+    @media(max-width:700px){
+      
+        .content_container img{
+            width: 400px;
+        }
+        .container_project{
+            width: 100%
+        }
+    }
+
+    /*----------FOOTER-------------*/
+.contact{
+    width: 100%;
+    text-align: center;
+    padding:30px 0;
+    color: rgb(3, 209, 255);
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    background: rgba(4, 4, 44, 0.915)
+
+    
+    
+    
+}
+.contact h4{
+    font-weight: 400px;
+    font-size: 20px;
+}
+    
+
+
